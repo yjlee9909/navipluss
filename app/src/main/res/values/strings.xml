@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">2testnavi</string>
+    <string name="navigation_drawer_open" />
+    <string name="navigation_drawer_close" />
+
+    <style name="navigation_drawer_open">Open navigation drawer</style>
+    <style name="navigation_drawer_close">Close navigation drawer</style>
+</resources>
