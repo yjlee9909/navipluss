@@ -9,7 +9,7 @@
             android:title="Message"/>
         <item android:id="@+id/nav_food"
             android:icon="@drawable/ic_food"
-            android:title="Food"/>
+            android:title="모범음식점"/>
     </group>
 
 
