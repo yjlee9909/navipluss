@@ -30,12 +30,31 @@ public class FoodFragment extends Fragment {
         super.onCreate(savedInstanceState);
         setHasOptionsMenu(true);
 
-        setContentView(R.layout.fragment_food);
+
+
+
+    }
+
+
+    @Override
+    public void onCreateOptionsMenu(@NonNull Menu menu, @NonNull MenuInflater inflater) {
+        super.onCreateOptionsMenu(menu, inflater);
+    }
+
+    @Nullable
+    @Override
+    public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
+
+
+
+
+        View view = inflater.inflate(R.layout.fragment_food, container, false);
 
 
         StrictMode.enableDefaults();
 
-        TextView status1 = (TextView)findViewById(R.id.result);
+        TextView status1 = (TextView)view.findViewById(R.id.result);
+
 
         boolean initem = false, inbsnsSector = false, inbsnsCond = false, inbsnsNm = false, inaddrRoad = false, inaddrJibun = false;
         boolean inmenu = false, intel = false, inspecDate = false, inovrdDate = false, ingugun = false, indataDay = false, inlat = false, inlng = false;
@@ -174,18 +193,6 @@ public class FoodFragment extends Fragment {
         } catch(Exception e){
             status1.setText("에러가..났습니다...");
         }
-
-    }
-
-
-    @Override
-    public void onCreateOptionsMenu(@NonNull Menu menu, @NonNull MenuInflater inflater) {
-        super.onCreateOptionsMenu(menu, inflater);
-    }
-
-    @Nullable
-    @Override
-    public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
-        return inflater.inflate(R.layout.fragment_food,container,false);
+        return view;
     }
 }

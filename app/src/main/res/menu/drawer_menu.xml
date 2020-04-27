@@ -7,10 +7,32 @@
         <item android:id="@+id/nav_message"
             android:icon="@drawable/ic_message"
             android:title="Message"/>
-        <item android:id="@+id/nav_food"
-            android:icon="@drawable/ic_food"
-            android:title="모범음식점"/>
+
+
     </group>
+
+    <item android:title="음식점">
+
+        <menu>
+            <item android:id="@+id/nav_food"
+                android:icon="@drawable/ic_food"
+                android:title="모범음식점"/>
+        </menu>
+
+    </item>
+
+    <item android:title="문화">
+
+        <menu>
+            <item android:id="@+id/nav_publicart"
+                android:icon="@drawable/ic_publicart"
+                android:title="공공조형물"/>
+            <item android:id="@+id/nav_storytelling"
+                android:icon="@drawable/ic_stroytelling"
+                android:title="스토리텔링 원형정보"/>
+        </menu>
+
+    </item>
 
 
 
